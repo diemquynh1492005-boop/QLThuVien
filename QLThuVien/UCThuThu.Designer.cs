@@ -32,10 +32,12 @@
             // 
             // UCThuThu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UCThuThu";
-            this.Size = new System.Drawing.Size(1190, 527);
+            this.Size = new System.Drawing.Size(1785, 823);
+            this.Load += new System.EventHandler(this.UCThuThu_Load);
             this.ResumeLayout(false);
 
         }

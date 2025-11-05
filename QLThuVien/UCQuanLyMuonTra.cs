@@ -22,7 +22,6 @@ namespace QLThuVien
             panelNoiDung.Dock = DockStyle.Fill;
 
             // Gắn sự kiện cho các nút
-            btnThuThu.Click += btnThuThu_Click;
             btnPhieuMuon.Click += btnPhieuMuon_Click;
             btnPhieuTra.Click += btnPhieuTra_Click;
             btnPhieuPhat.Click += btnPhieuPhat_Click;
@@ -51,11 +50,6 @@ namespace QLThuVien
             LoadUserControl(new UCPhieuMuon());
         }
 
-        private void btnThuThu_Click(object sender, EventArgs e)
-        {
-            // Hiện màn hình "Thủ thư"
-            LoadUserControl(new UCThuThu());
-        }
 
         private void btnPhieuTra_Click(object sender, EventArgs e)
         {

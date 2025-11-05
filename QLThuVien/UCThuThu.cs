@@ -16,5 +16,10 @@ namespace QLThuVien
         {
             InitializeComponent();
         }
+
+        private void UCThuThu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
