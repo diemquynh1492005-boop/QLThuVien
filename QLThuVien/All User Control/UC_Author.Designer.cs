@@ -47,9 +47,9 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.472178F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.52782F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1252, 629);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.473989F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.52601F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1516, 865);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pnltop
@@ -58,39 +58,43 @@
             this.pnltop.Controls.Add(this.btntacgiasach);
             this.pnltop.Controls.Add(this.btntacgia);
             this.pnltop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnltop.FillColor = System.Drawing.SystemColors.InactiveBorder;
             this.pnltop.Location = new System.Drawing.Point(3, 3);
             this.pnltop.Name = "pnltop";
-            this.pnltop.Size = new System.Drawing.Size(1246, 41);
+            this.pnltop.Size = new System.Drawing.Size(1510, 50);
             this.pnltop.TabIndex = 0;
+            this.pnltop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnltop_Paint);
             // 
             // btntacgiasach
             // 
+            this.btntacgiasach.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btntacgiasach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btntacgiasach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btntacgiasach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btntacgiasach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btntacgiasach.FillColor = System.Drawing.Color.White;
-            this.btntacgiasach.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntacgiasach.FillColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btntacgiasach.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntacgiasach.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btntacgiasach.Location = new System.Drawing.Point(265, 0);
+            this.btntacgiasach.Location = new System.Drawing.Point(220, -3);
             this.btntacgiasach.Name = "btntacgiasach";
-            this.btntacgiasach.Size = new System.Drawing.Size(180, 49);
+            this.btntacgiasach.Size = new System.Drawing.Size(200, 55);
             this.btntacgiasach.TabIndex = 1;
             this.btntacgiasach.Text = "Tác giả sách";
             this.btntacgiasach.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btntacgia
             // 
+            this.btntacgia.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btntacgia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btntacgia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btntacgia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btntacgia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btntacgia.FillColor = System.Drawing.Color.White;
-            this.btntacgia.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntacgia.FillColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btntacgia.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntacgia.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btntacgia.Location = new System.Drawing.Point(51, 0);
+            this.btntacgia.Location = new System.Drawing.Point(14, -3);
             this.btntacgia.Name = "btntacgia";
-            this.btntacgia.Size = new System.Drawing.Size(180, 49);
+            this.btntacgia.Size = new System.Drawing.Size(200, 55);
             this.btntacgia.TabIndex = 0;
             this.btntacgia.Text = "Tác giả";
             this.btntacgia.Click += new System.EventHandler(this.btntacgia_Click);
@@ -100,21 +104,21 @@
             this.tablepanelbody.ColumnCount = 1;
             this.tablepanelbody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tablepanelbody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablepanelbody.Location = new System.Drawing.Point(3, 50);
+            this.tablepanelbody.Location = new System.Drawing.Point(3, 59);
             this.tablepanelbody.Name = "tablepanelbody";
             this.tablepanelbody.RowCount = 1;
             this.tablepanelbody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tablepanelbody.Size = new System.Drawing.Size(1246, 576);
+            this.tablepanelbody.Size = new System.Drawing.Size(1510, 803);
             this.tablepanelbody.TabIndex = 1;
             // 
             // UC_Author
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UC_Author";
-            this.Size = new System.Drawing.Size(1252, 629);
+            this.Size = new System.Drawing.Size(1516, 865);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.pnltop.ResumeLayout(false);
             this.ResumeLayout(false);

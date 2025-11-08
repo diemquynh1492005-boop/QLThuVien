@@ -16,5 +16,10 @@ namespace QLThuVien.All_User_Control
         {
             InitializeComponent();
         }
+
+        private void lblquanlytacgia_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

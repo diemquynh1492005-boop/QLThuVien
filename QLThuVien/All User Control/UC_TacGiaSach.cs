@@ -21,5 +21,10 @@ namespace QLThuVien.All_User_Control
         {
 
         }
+
+        private void lbltentruong_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

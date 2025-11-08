@@ -59,5 +59,10 @@ namespace QLThuVien.All_User_Control
                 UC_TacGiaSach = new UC_TacGiaSach(); //Khởi tạo UC_TacGiaSach nếu chưa có
                 LoadUserControl(UC_TacGiaSach); //Nạp UC_TacGiaSach vào panel nội dung
         }
+
+        private void pnltop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
