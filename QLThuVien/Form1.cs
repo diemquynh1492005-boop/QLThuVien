@@ -82,7 +82,10 @@ namespace QLThuVien
 
         private void btnMuonTra_Click(object sender, EventArgs e)
         {
+            if (ucMuonTra == null)
+                ucMuonTra = new UCQuanLyMuonTra(); // Khởi tạo user control của màn Quản lý mượn trả
 
+            LoadUserControl(ucMuonTra); // Gọi hàm đã có sẵn để hiển thị
         }
 
         private void btnReader_Click(object sender, EventArgs e)
@@ -92,19 +95,11 @@ namespace QLThuVien
             LoadUserControl(UC_Reader);
         }
 
-        }
 
         // >>> BẮT ĐẦU THÊM
         // Biến để giữ lại user control (nếu bạn muốn tái sử dụng, không tạo mới nhiều lần)
         private UCQuanLyMuonTra ucMuonTra;
 
-        private void btnMuonTra_Click(object sender, EventArgs e)
-        {
-            if (ucMuonTra == null)
-                ucMuonTra = new UCQuanLyMuonTra(); // Khởi tạo user control của màn Quản lý mượn trả
-
-            LoadUserControl(ucMuonTra); // Gọi hàm đã có sẵn để hiển thị
-        }
 
         private void frmQLThuVien_Load(object sender, EventArgs e)
         {
