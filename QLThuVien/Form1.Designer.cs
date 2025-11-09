@@ -373,6 +373,7 @@
             this.btnReader.Size = new System.Drawing.Size(251, 28);
             this.btnReader.TabIndex = 2;
             this.btnReader.Text = "   Quản lý độc giả";
+            this.btnReader.Click += new System.EventHandler(this.btnReader_Click);
             // 
             // btnAuthor
             // 
@@ -395,6 +396,7 @@
             this.btnAuthor.Size = new System.Drawing.Size(251, 28);
             this.btnAuthor.TabIndex = 3;
             this.btnAuthor.Text = "  Quản lý tác giả";
+            this.btnAuthor.Click += new System.EventHandler(this.btnAuthor_Click);
             // 
             // btnMuonTra
             // 

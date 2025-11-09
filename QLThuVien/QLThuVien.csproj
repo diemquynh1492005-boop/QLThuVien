@@ -63,12 +63,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="All User Control\UC_Author.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_Author.Designer.cs">
+      <DependentUpon>UC_Author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_Reader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_Reader.Designer.cs">
+      <DependentUpon>UC_Reader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_TacGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_TacGia.Designer.cs">
+      <DependentUpon>UC_TacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_TacGiaSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_TacGiaSach.Designer.cs">
+      <DependentUpon>UC_TacGiaSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="All User Control\UC_Author.resx">
+      <DependentUpon>UC_Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_Reader.resx">
+      <DependentUpon>UC_Reader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_TacGia.resx">
+      <DependentUpon>UC_TacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_TacGiaSach.resx">
+      <DependentUpon>UC_TacGiaSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     <Compile Include="frmInPhieuTra.cs">
       <SubType>Form</SubType>
     </Compile>

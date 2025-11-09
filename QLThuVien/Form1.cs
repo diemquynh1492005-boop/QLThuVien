@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLThuVien.All_User_Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,6 +66,31 @@ namespace QLThuVien
 
         private void tablepanelBody_Paint(object sender, PaintEventArgs e)
         {
+          
+    }
+        //Bắt đầu thêm
+        //Biến để giữ lại User control(nếu bạn muốn tái sử dụng, không tạo mới nhiều lần)
+        private UC_Author UC_Author;
+        private UC_Reader UC_Reader;
+
+        private void btnAuthor_Click(object sender, EventArgs e)
+        {
+            if(UC_Author == null)
+                UC_Author = new UC_Author(); // khởi tạo usercontrol của màn Tác giả
+            LoadUserControl(UC_Author); 
+        }
+
+        private void btnMuonTra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReader_Click(object sender, EventArgs e)
+        {
+            if(UC_Reader == null)
+                UC_Reader = new UC_Reader(); // khởi tạo usercontrol của màn Độc giả
+            LoadUserControl(UC_Reader);
+        }
 
         }
 
