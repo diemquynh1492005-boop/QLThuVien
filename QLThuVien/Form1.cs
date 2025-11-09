@@ -17,7 +17,9 @@ namespace QLThuVien
         public frmQLThuVien()
         {
             InitializeComponent();
+
         }
+
         private void LoadUserControl(UserControl uc)
         {
             // Xóa control cũ ở cột phải (col=1, row=0)
@@ -28,6 +30,7 @@ namespace QLThuVien
             uc.Dock = DockStyle.Fill;
             tablepanelBody.Controls.Add(uc, 1, 0);
         }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             status1.Text = DateTime.Now.ToString();
@@ -88,5 +91,30 @@ namespace QLThuVien
                 UC_Reader = new UC_Reader(); // khởi tạo usercontrol của màn Độc giả
             LoadUserControl(UC_Reader);
         }
+
+        }
+
+        // >>> BẮT ĐẦU THÊM
+        // Biến để giữ lại user control (nếu bạn muốn tái sử dụng, không tạo mới nhiều lần)
+        private UCQuanLyMuonTra ucMuonTra;
+
+        private void btnMuonTra_Click(object sender, EventArgs e)
+        {
+            if (ucMuonTra == null)
+                ucMuonTra = new UCQuanLyMuonTra(); // Khởi tạo user control của màn Quản lý mượn trả
+
+            LoadUserControl(ucMuonTra); // Gọi hàm đã có sẵn để hiển thị
+        }
+
+        private void frmQLThuVien_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        // <<< KẾT THÚC THÊM
     }
 }

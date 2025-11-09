@@ -85,8 +85,9 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(943, 40);
+            this.guna2Panel1.Size = new System.Drawing.Size(1352, 32);
             this.guna2Panel1.TabIndex = 0;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // lblTitle
             // 
@@ -96,10 +97,10 @@
             this.lblTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitle.Location = new System.Drawing.Point(398, 2);
+            this.lblTitle.Location = new System.Drawing.Point(353, 2);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(229, 34);
+            this.lblTitle.Size = new System.Drawing.Size(191, 30);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "QUẢN LÝ THƯ VIỆN";
             this.lblTitle.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -115,10 +116,10 @@
             this.btnMinimize.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.Image = global::QLThuVien.Properties.Resources.minimize_sign;
-            this.btnMinimize.Location = new System.Drawing.Point(718, 0);
+            this.btnMinimize.Location = new System.Drawing.Point(1151, 0);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(75, 40);
+            this.btnMinimize.Size = new System.Drawing.Size(67, 32);
             this.btnMinimize.TabIndex = 2;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
@@ -133,10 +134,10 @@
             this.btnMaximize.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMaximize.ForeColor = System.Drawing.Color.White;
             this.btnMaximize.Image = global::QLThuVien.Properties.Resources.move;
-            this.btnMaximize.Location = new System.Drawing.Point(793, 0);
+            this.btnMaximize.Location = new System.Drawing.Point(1218, 0);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(75, 40);
+            this.btnMaximize.Size = new System.Drawing.Size(67, 32);
             this.btnMaximize.TabIndex = 1;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
@@ -151,10 +152,10 @@
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Image = global::QLThuVien.Properties.Resources.cross;
-            this.btnClose.Location = new System.Drawing.Point(868, 0);
+            this.btnClose.Location = new System.Drawing.Point(1285, 0);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 40);
+            this.btnClose.Size = new System.Drawing.Size(67, 32);
             this.btnClose.TabIndex = 0;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -164,10 +165,10 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.status1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 511);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 521);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(943, 37);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1352, 29);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -175,7 +176,7 @@
             // 
             this.status1.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.status1.Name = "status1";
-            this.status1.Size = new System.Drawing.Size(58, 30);
+            this.status1.Size = new System.Drawing.Size(47, 23);
             this.status1.Text = "Time";
             // 
             // timer1
@@ -191,13 +192,14 @@
             this.tablepanelBody.Controls.Add(this.tablepanelMenu, 0, 0);
             this.tablepanelBody.Controls.Add(this.sparklineEdit1, 1, 0);
             this.tablepanelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablepanelBody.Location = new System.Drawing.Point(0, 40);
+            this.tablepanelBody.Location = new System.Drawing.Point(0, 32);
             this.tablepanelBody.Margin = new System.Windows.Forms.Padding(2);
             this.tablepanelBody.Name = "tablepanelBody";
             this.tablepanelBody.RowCount = 1;
             this.tablepanelBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tablepanelBody.Size = new System.Drawing.Size(943, 471);
+            this.tablepanelBody.Size = new System.Drawing.Size(1352, 489);
             this.tablepanelBody.TabIndex = 2;
+            this.tablepanelBody.Click += new System.EventHandler(this.btnMuonTra_Click);
             this.tablepanelBody.Paint += new System.Windows.Forms.PaintEventHandler(this.tablepanelBody_Paint);
             // 
             // tablepanelMenu
@@ -222,16 +224,16 @@
             this.tablepanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
             this.tablepanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18F));
             this.tablepanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tablepanelMenu.Size = new System.Drawing.Size(184, 467);
+            this.tablepanelMenu.Size = new System.Drawing.Size(266, 485);
             this.tablepanelMenu.TabIndex = 0;
             // 
             // groupControl2
             // 
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl2.Location = new System.Drawing.Point(2, 332);
+            this.groupControl2.Location = new System.Drawing.Point(2, 345);
             this.groupControl2.Margin = new System.Windows.Forms.Padding(2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(180, 1);
+            this.groupControl2.Size = new System.Drawing.Size(262, 1);
             this.groupControl2.TabIndex = 5;
             this.groupControl2.Text = "groupControl2";
             // 
@@ -248,7 +250,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(180, 112);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(262, 117);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // guna2PictureBox1
@@ -259,7 +261,7 @@
             this.guna2PictureBox1.Location = new System.Drawing.Point(2, 2);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(176, 80);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(258, 83);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -270,10 +272,10 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(2, 84);
+            this.label1.Location = new System.Drawing.Point(2, 87);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 28);
+            this.label1.Size = new System.Drawing.Size(258, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "NEU LIBRARY";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,10 +292,10 @@
             this.tableLayoutPanel3.Controls.Add(this.btnReport, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 122);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 127);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.tableLayoutPanel3.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.tableLayoutPanel3.RowCount = 7;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
@@ -302,7 +304,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(180, 206);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(262, 214);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // btnHome
@@ -320,10 +322,10 @@
             this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHome.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnHome.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnHome.Location = new System.Drawing.Point(10, 22);
+            this.btnHome.Location = new System.Drawing.Point(9, 23);
             this.btnHome.Margin = new System.Windows.Forms.Padding(2);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(168, 26);
+            this.btnHome.Size = new System.Drawing.Size(251, 28);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Trang chủ";
             this.btnHome.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -343,10 +345,10 @@
             this.btnBook.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnBook.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnBook.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnBook.Location = new System.Drawing.Point(10, 52);
+            this.btnBook.Location = new System.Drawing.Point(9, 55);
             this.btnBook.Margin = new System.Windows.Forms.Padding(2);
             this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(168, 26);
+            this.btnBook.Size = new System.Drawing.Size(251, 28);
             this.btnBook.TabIndex = 1;
             this.btnBook.Text = "Quản lý sách";
             // 
@@ -365,10 +367,10 @@
             this.btnReader.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnReader.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnReader.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnReader.Location = new System.Drawing.Point(10, 82);
+            this.btnReader.Location = new System.Drawing.Point(9, 87);
             this.btnReader.Margin = new System.Windows.Forms.Padding(2);
             this.btnReader.Name = "btnReader";
-            this.btnReader.Size = new System.Drawing.Size(168, 26);
+            this.btnReader.Size = new System.Drawing.Size(251, 28);
             this.btnReader.TabIndex = 2;
             this.btnReader.Text = "   Quản lý độc giả";
             this.btnReader.Click += new System.EventHandler(this.btnReader_Click);
@@ -388,10 +390,10 @@
             this.btnAuthor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAuthor.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnAuthor.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnAuthor.Location = new System.Drawing.Point(10, 112);
+            this.btnAuthor.Location = new System.Drawing.Point(9, 119);
             this.btnAuthor.Margin = new System.Windows.Forms.Padding(2);
             this.btnAuthor.Name = "btnAuthor";
-            this.btnAuthor.Size = new System.Drawing.Size(168, 26);
+            this.btnAuthor.Size = new System.Drawing.Size(251, 28);
             this.btnAuthor.TabIndex = 3;
             this.btnAuthor.Text = "  Quản lý tác giả";
             this.btnAuthor.Click += new System.EventHandler(this.btnAuthor_Click);
@@ -411,12 +413,13 @@
             this.btnMuonTra.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMuonTra.ImageOffset = new System.Drawing.Point(3, 0);
             this.btnMuonTra.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnMuonTra.Location = new System.Drawing.Point(10, 142);
+            this.btnMuonTra.Location = new System.Drawing.Point(9, 151);
             this.btnMuonTra.Margin = new System.Windows.Forms.Padding(2);
             this.btnMuonTra.Name = "btnMuonTra";
-            this.btnMuonTra.Size = new System.Drawing.Size(168, 26);
+            this.btnMuonTra.Size = new System.Drawing.Size(251, 28);
             this.btnMuonTra.TabIndex = 4;
             this.btnMuonTra.Text = " Quản lý mượn trả";
+            this.btnMuonTra.Click += new System.EventHandler(this.btnMuonTra_Click);
             // 
             // btnReport
             // 
@@ -433,10 +436,10 @@
             this.btnReport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnReport.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnReport.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnReport.Location = new System.Drawing.Point(10, 172);
+            this.btnReport.Location = new System.Drawing.Point(9, 183);
             this.btnReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(168, 32);
+            this.btnReport.Size = new System.Drawing.Size(251, 29);
             this.btnReport.TabIndex = 5;
             this.btnReport.Text = "Báo cáo";
             // 
@@ -446,10 +449,10 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Left;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label3.Location = new System.Drawing.Point(10, 0);
+            this.label3.Location = new System.Drawing.Point(9, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 20);
+            this.label3.Size = new System.Drawing.Size(46, 21);
             this.label3.TabIndex = 6;
             this.label3.Text = "Menu";
             // 
@@ -461,14 +464,14 @@
             this.tableLayoutPanel4.Controls.Add(this.btnCaidat, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 336);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(2, 349);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(180, 80);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(262, 83);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // btnHuongdan
@@ -489,8 +492,8 @@
             this.btnHuongdan.Location = new System.Drawing.Point(2, 18);
             this.btnHuongdan.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuongdan.Name = "btnHuongdan";
-            this.btnHuongdan.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.btnHuongdan.Size = new System.Drawing.Size(176, 28);
+            this.btnHuongdan.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnHuongdan.Size = new System.Drawing.Size(258, 29);
             this.btnHuongdan.TabIndex = 0;
             this.btnHuongdan.Text = "Hướng dẫn";
             // 
@@ -509,11 +512,11 @@
             this.btnCaidat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCaidat.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnCaidat.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnCaidat.Location = new System.Drawing.Point(2, 50);
+            this.btnCaidat.Location = new System.Drawing.Point(2, 51);
             this.btnCaidat.Margin = new System.Windows.Forms.Padding(2);
             this.btnCaidat.Name = "btnCaidat";
-            this.btnCaidat.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.btnCaidat.Size = new System.Drawing.Size(176, 28);
+            this.btnCaidat.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnCaidat.Size = new System.Drawing.Size(258, 30);
             this.btnCaidat.TabIndex = 1;
             this.btnCaidat.Text = "Cài đặt";
             // 
@@ -526,7 +529,7 @@
             this.label2.Location = new System.Drawing.Point(2, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 16);
+            this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Support";
             // 
@@ -536,13 +539,13 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Controls.Add(this.btnSignout, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 420);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 436);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(180, 45);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(262, 47);
             this.tableLayoutPanel5.TabIndex = 3;
             // 
             // btnSignout
@@ -559,35 +562,35 @@
             this.btnSignout.Location = new System.Drawing.Point(2, 11);
             this.btnSignout.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignout.Name = "btnSignout";
-            this.btnSignout.Size = new System.Drawing.Size(176, 32);
+            this.btnSignout.Size = new System.Drawing.Size(258, 34);
             this.btnSignout.TabIndex = 0;
             this.btnSignout.Text = "Đăng xuất";
             // 
             // groupControl1
             // 
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl1.Location = new System.Drawing.Point(2, 118);
+            this.groupControl1.Location = new System.Drawing.Point(2, 123);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(180, 1);
+            this.groupControl1.Size = new System.Drawing.Size(262, 1);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "groupControl1";
             // 
             // sparklineEdit1
             // 
-            this.sparklineEdit1.Location = new System.Drawing.Point(190, 2);
+            this.sparklineEdit1.Location = new System.Drawing.Point(272, 2);
             this.sparklineEdit1.Margin = new System.Windows.Forms.Padding(2);
             this.sparklineEdit1.Name = "sparklineEdit1";
-            lineSparklineView1.ScaleFactor = 1.5F;
+            lineSparklineView1.ScaleFactor = 1.25F;
             this.sparklineEdit1.Properties.View = lineSparklineView1;
-            this.sparklineEdit1.Size = new System.Drawing.Size(6, 6);
+            this.sparklineEdit1.Size = new System.Drawing.Size(5, 5);
             this.sparklineEdit1.TabIndex = 1;
             // 
             // frmQLThuVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 548);
+            this.ClientSize = new System.Drawing.Size(1352, 550);
             this.Controls.Add(this.tablepanelBody);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.guna2Panel1);
@@ -597,6 +600,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mainform";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmQLThuVien_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
