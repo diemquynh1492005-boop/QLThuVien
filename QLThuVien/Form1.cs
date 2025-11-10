@@ -61,13 +61,49 @@ namespace QLThuVien
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            var home = new UC_Home();
+            LoadUserControl(home);
         }
 
         private void tablepanelBody_Paint(object sender, PaintEventArgs e)
         {
           
     }
+
+        private void btnBook_Click(object sender, EventArgs e)
+        {
+            LoadTraCuuUC();
+        }
+
+        private void LoadTraCuuUC()
+        {
+            var uc = new UC_Tracuubooks();
+
+            uc.ShowDauSach += (s, ev) => LoadDauSachUC();
+            uc.ShowCuonSach += (s, ev) => LoadCuonSachUC();
+
+            LoadUserControl(uc);
+        }
+
+        private void LoadDauSachUC()
+        {
+            var uc = new UC_DauSach();
+
+            uc.ShowTraCuu += (s, ev) => LoadTraCuuUC();
+            uc.ShowCuonSach += (s, ev) => LoadCuonSachUC();
+
+            LoadUserControl(uc);
+        }
+
+        private void LoadCuonSachUC()
+        {
+            var uc = new UC_Sach();
+
+            uc.ShowTraCuu += (s, ev) => LoadTraCuuUC();
+            uc.ShowDauSach += (s, ev) => LoadDauSachUC();
+
+            LoadUserControl(uc);
+        }
         //Bắt đầu thêm
         //Biến để giữ lại User control(nếu bạn muốn tái sử dụng, không tạo mới nhiều lần)
         private UC_Author UC_Author;

@@ -47,6 +47,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
@@ -63,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseHelper.cs" />
     <Compile Include="All User Control\UC_Author.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -93,6 +95,43 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChiTietSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietSach.Designer.cs">
+      <DependentUpon>frmChiTietSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_DauSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DauSach.Designer.cs">
+      <DependentUpon>UC_DauSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Sach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Sach.Designer.cs">
+      <DependentUpon>UC_Sach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Tracuubooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Tracuubooks.Designer.cs">
+      <DependentUpon>UC_Tracuubooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Home.Designer.cs">
+      <DependentUpon>UC_Home.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietSach.resx">
+      <DependentUpon>frmChiTietSach.cs</DependentUpon>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +220,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC_DauSach.resx">
+      <DependentUpon>UC_DauSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Sach.resx">
+      <DependentUpon>UC_Sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Tracuubooks.resx">
+      <DependentUpon>UC_Tracuubooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Home.resx">
+      <DependentUpon>UC_Home.cs</DependentUpon>
     <EmbeddedResource Include="UCPhieuMuon.resx">
       <DependentUpon>UCPhieuMuon.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +304,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\setting_6475311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\475755312_1005450024961940_3283958104279104709_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-02 234317.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-02 2343171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_11741045.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom_16913246.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_1361594.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_13615941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_8184974.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_7648366.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbook_11272077.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_15235114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_6954137.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history-book_2036648.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_3958462.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

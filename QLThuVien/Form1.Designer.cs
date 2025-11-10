@@ -351,6 +351,7 @@
             this.btnBook.Size = new System.Drawing.Size(251, 28);
             this.btnBook.TabIndex = 1;
             this.btnBook.Text = "Quản lý sách";
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // btnReader
             // 
