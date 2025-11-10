@@ -84,7 +84,7 @@
             this.danhMụcToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1445, 53);
+            this.menuStrip1.Size = new System.Drawing.Size(1445, 57);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -94,7 +94,7 @@
             this.traCứuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.traCứuToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.traCứuToolStripMenuItem.Name = "traCứuToolStripMenuItem";
-            this.traCứuToolStripMenuItem.Size = new System.Drawing.Size(151, 49);
+            this.traCứuToolStripMenuItem.Size = new System.Drawing.Size(151, 53);
             this.traCứuToolStripMenuItem.Text = "Tra cứu";
             this.traCứuToolStripMenuItem.Click += new System.EventHandler(this.traCứuToolStripMenuItem_Click);
             // 
@@ -103,7 +103,7 @@
             this.đầuSáchToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.đầuSáchToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.đầuSáchToolStripMenuItem.Name = "đầuSáchToolStripMenuItem";
-            this.đầuSáchToolStripMenuItem.Size = new System.Drawing.Size(174, 49);
+            this.đầuSáchToolStripMenuItem.Size = new System.Drawing.Size(174, 53);
             this.đầuSáchToolStripMenuItem.Text = "Đầu sách";
             this.đầuSáchToolStripMenuItem.Click += new System.EventHandler(this.đầuSáchToolStripMenuItem_Click);
             // 
@@ -112,7 +112,7 @@
             this.sáchToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sáchToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.sáchToolStripMenuItem.Name = "sáchToolStripMenuItem";
-            this.sáchToolStripMenuItem.Size = new System.Drawing.Size(109, 49);
+            this.sáchToolStripMenuItem.Size = new System.Drawing.Size(109, 53);
             this.sáchToolStripMenuItem.Text = "Sách";
             this.sáchToolStripMenuItem.Click += new System.EventHandler(this.sáchToolStripMenuItem_Click);
             // 
@@ -121,7 +121,7 @@
             this.danhMụcToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.danhMụcToolStripMenuItem.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
-            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(191, 49);
+            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(191, 53);
             this.danhMụcToolStripMenuItem.Text = "Danh mục";
             // 
             // tableLayoutPanel1
@@ -131,7 +131,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 53);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 57);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -159,7 +159,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.txtSearch, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 123);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 127);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(0, 30, 0, 10);
             this.tableLayoutPanel2.RowCount = 1;
@@ -203,12 +203,12 @@
             this.tableLayoutPanel3.Controls.Add(this.flowFilterContainer, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.dgvKetQua, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 240);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 244);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.67471F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.32529F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1445, 791);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1445, 787);
             this.tableLayoutPanel3.TabIndex = 3;
             this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
@@ -223,7 +223,7 @@
             this.btnChitiet.FillColor = System.Drawing.SystemColors.HotTrack;
             this.btnChitiet.Font = new System.Drawing.Font("Segoe UI Semibold", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChitiet.ForeColor = System.Drawing.Color.White;
-            this.btnChitiet.Location = new System.Drawing.Point(1112, 696);
+            this.btnChitiet.Location = new System.Drawing.Point(1112, 693);
             this.btnChitiet.Name = "btnChitiet";
             this.btnChitiet.Size = new System.Drawing.Size(330, 91);
             this.btnChitiet.TabIndex = 4;
@@ -241,7 +241,7 @@
             this.btnTimKiem.FillColor = System.Drawing.SystemColors.HotTrack;
             this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(64, 696);
+            this.btnTimKiem.Location = new System.Drawing.Point(64, 693);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(305, 91);
             this.btnTimKiem.TabIndex = 3;
@@ -262,7 +262,7 @@
             this.flowFilterContainer.Location = new System.Drawing.Point(3, 3);
             this.flowFilterContainer.Name = "flowFilterContainer";
             this.flowFilterContainer.Padding = new System.Windows.Forms.Padding(10);
-            this.flowFilterContainer.Size = new System.Drawing.Size(427, 687);
+            this.flowFilterContainer.Size = new System.Drawing.Size(427, 684);
             this.flowFilterContainer.TabIndex = 0;
             this.flowFilterContainer.WrapContents = false;
             // 
@@ -512,7 +512,7 @@
             this.dgvKetQua.RowHeadersWidth = 82;
             this.dgvKetQua.RowTemplate.Height = 33;
             this.dgvKetQua.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKetQua.Size = new System.Drawing.Size(1006, 687);
+            this.dgvKetQua.Size = new System.Drawing.Size(1006, 684);
             this.dgvKetQua.TabIndex = 1;
             // 
             // UC_Tracuubooks
